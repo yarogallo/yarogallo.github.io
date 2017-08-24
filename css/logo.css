@@ -1,0 +1,30 @@
+.light-gray {
+    fill: #7d97ad;
+}
+
+.white {
+    fill: #fff;
+}
+
+.dark-gray {
+    fill: #2d3c49;
+}
+
+.blue {
+    fill: #02b3e4;
+}
+
+#svg-logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.stroke {
+    stroke: #2d3c49;
+    stroke-width: 2px;
+}
+
+.logo-text {
+    -webkit-text-stroke: 2px #2d3c49;
+    font-size: 9px;
+}

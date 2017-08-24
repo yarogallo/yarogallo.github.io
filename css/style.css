@@ -1,0 +1,137 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|zocial);
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #2d3c49;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #02b3e4;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    border-bottom: 3px solid #7d97ad;
+}
+
+footer {
+    align-self: flex-end;
+}
+
+.text-size-bigger {
+    font-size: 50px;
+}
+
+.text-size-big {
+    font-size: 30px;
+}
+
+.font-thin {
+    font-weight: 100;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.muted-color {
+    color: #7d97ad;
+    opacity: 0.5;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right;
+}
+
+.space-between {
+    margin: 20px 0;
+}
+
+.space-around {
+    padding: 10px;
+}
+
+.space_bottom {
+    margin-bottom: 20px;
+}
+
+.space-left {
+    margin-left: 10px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.floated {
+    float: right;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row,
+.col-12,
+.col-4 {
+    width: 100%;
+}
+
+.col-3 {
+    width: calc(25% - 20px);
+}
+
+.col-9 {
+    width: calc(75% - 20px);
+}
+
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+}
+
+.display {
+    display: none;
+}
