@@ -29,7 +29,7 @@ a:hover {
     color: #02b3e4;
 }
 
-img {
+.img-width {
     max-width: 100%;
 }
 
@@ -86,7 +86,7 @@ footer {
     padding: 10px;
 }
 
-.space_bottom {
+.space-bottom {
     margin-bottom: 20px;
 }
 

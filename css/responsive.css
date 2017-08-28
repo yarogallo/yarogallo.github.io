@@ -13,13 +13,13 @@
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
     .text-size-bigger {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 360px) {
     .col-3,
     .col-9 {
         width: calc(100% - 20px);
