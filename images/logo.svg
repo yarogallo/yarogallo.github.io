@@ -24,10 +24,9 @@
 
     .logo-text {
         stroke-width: 22px;
-        font-size: 10px;
+        font-size: 9px;
+        font-family: 'Lato', sans-serif;
     }
-
-
 </style>
     <circle id="circ" class="blue stroke" cx="50" cy="50" r="48"/>
     <rect id="notebook" class="white stroke" x="20" y="20" height="58" width="55" />
