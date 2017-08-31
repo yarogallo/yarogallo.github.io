@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    line-height: 1.2em;
     font-weight: 400;
     color: #2d3c49;
 }
@@ -94,12 +95,26 @@ footer {
     margin-left: 10px;
 }
 
+.space-right-left {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .margin-auto {
     margin: 0 auto;
 }
 
 .floated {
     float: right;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 3.6em;
 }
 
 .flex {

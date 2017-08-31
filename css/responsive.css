@@ -1,4 +1,4 @@
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 785px) {
     .text-size-bigger {
         font-size: 40px;
     }
@@ -49,5 +49,9 @@
         max-width: 1020px;
         margin-right: auto;
         margin-left: auto;
+    }
+    .space-right-left {
+        margin-right: 0;
+        margin-left: 0;
     }
 }
