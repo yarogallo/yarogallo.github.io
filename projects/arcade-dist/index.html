@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link rel="stylesheet" href="style-min.css">
+</head>
+
+<body>
+    <section id="game-screens-container" class="conatiner">
+        <div id="init-screen" class="row dark-green space-around round-corners">
+            <h1>Welcome to Arcade Game</h1>
+            <article>
+                <h3 class="underline white-text">Game Rules:</h3>
+                <p>The player have to do five rounds from the land to the sea. In order to win the game, the player need to finish the rounds with an score equal or over 1000 points. Anytime the player hit an enemy, the score will be decremented 100 points,
+                    if the score became negative, the game automatically finish and the player loses. The player can pick up gems on his way to the sea, each gem has an specific value, when the player pick up a gem, the score will be incremented depending
+                    on the gem value.There are also some rocks on the player way, they are not a big deal but, the player can not pass trought them</p>
+            </article>
+            <form>
+                <h3 class="underline white-text">Choose your Player:</h3>
+                <div>
+                    <input class="player-input" type="image" name="game-player" src="images/char-pink-girl.png" alt="pink girl player">
+                    <input class="player-input" type="image" name="game-player" src="images/char-boy.png" alt="boy player">
+                    <input class="player-input" type="image" name="game-player" src="images/char-horn-girl.png" alt="horn girl">
+                    <input class="player-input" type="image" name="game-player" src="images/char-cat-girl.png" alt="cat girl">
+                </div>
+
+
+                <button id="start-game-button" class="game-button round-corners white-text" type="button">Start Game</button>
+            </form>
+        </div>
+        <div id="final-screen" class="row dark-green space-around round-corners close">
+            <h1 id="gameResult">Result</h1>
+            <h3>Your Score was <span id="score" class="red-text"></span> in <span id="rounds" class="red-text"></span> rounds</h3>
+            <p>Do you want try again??</p>
+            <form>
+                <button id="restart-game-button" class="game-button round-corners white-text" type="button">Start Over</button>
+            </form>
+        </div>
+    </section>
+    <script src="script-min.js"></script>
+
+</html>
