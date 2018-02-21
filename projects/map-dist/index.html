@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Favorite Places in San Francisco</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <header id="map-header" class="box-shadow row flex background-black">
+            <div id="edit-buttom-container" class="col-4 padding-around">
+                <button class="background-black pointer animation big-font" data-bind="click: toggleMenuHandler"><i class="fas fa-list-ul"></i></button>
+            </div>
+            <div id="title-container" class="col-8 text-right padding-around">
+                <h1>San Francisco Places</h1>
+            </div>
+        </header>
+        <main id="map-container" class="row relative">
+            <div id="list-container" class="background-black box-shadow padding-around animation absolute" data-bind="css:{outScreenX: visibleMenu}">
+                <form class="flex">
+                    <input id="input-place" type="text" placeholder="Places" data-bind="textInput: inputText, event:{keyup: filterPlacesHandler}">
+                    <button class="input-button text-black"><i class="fas fa-filter"></i> filter</button>
+                </form>
+                <ul data-bind="foreach: myPlaces">
+                    <li class="padding-bottom" data-bind="visible: $data.visibility">
+                        <button class="place-button background-black pointer" data-bind="click: $parent.removePlaceHandler"><i class="fas fa-times"></i></button>
+                        <p class="place"><i class="fas fa-map-marker-alt"></i><span data-bind="text: $data.name, click:  $parent.placeClickHandler" class="pointer">name</span></p>
+                    </li>
+                </ul>
+                <div>
+                    <button class="place-button background-black pointer" data-bind="visible: inputNewPlaceVisible, click: toggleInputHandler"><i class="fas fa-times"></i></button>
+                    <button class="place-button background-black pointer" data-bind="visible: !inputNewPlaceVisible(), click: toggleInputHandler"><i class="fas fa-edit"></i>Add New Place</i></button>
+                </div>
+                <form class="flex" data-bind="visible: inputNewPlaceVisible">
+                    <input id="input-new-Place" type="text" placeholder="Ex: Bay Bridge" data-bind="value: inputNewPlaceValue">
+                    <button class="pointer input-button text-black" data-bind="click: searchValueHandler"><i class="fas fa-check-circle"></i> add </button>
+                </form>
+            </div>
+            <div id="place-info-container" class="col-6 background-black box-shadow animation outScreenX absolute" data-bind="with: openPlace, css:{outScreenX: infoContainer}">
+                <header class="flex space-between">
+                    <h1 class="margin-left padding-between ">Name: <span data-bind="text: name"></span></h1>
+                    <button type="button" class="background-black pointer margin-right" data-bind="click: $parent.resetOpenPlaceHandler"><i class="fas fa-times"></i></button>
+                </header>
+                <div id="articles-container" class="padding-between margin-left">
+                    <p data-bind="visible: links.length"><i class="fas fa-link"></i> Related Links:</p>
+                    <nav data-bind="foreach:links">
+                        <a href="#" data-bind="text:$data, attr:{href: $data}" target="_blank" class="padding-bottom truncate"></a>
+                    </nav>
+                </div>
+                <div id="photos-container">
+                    <p class="margin-left" data-bind="visible: photosUrl.length > 0"><i class="far fa-images"></i> Related Photos:</p>
+                    <div id="images-container" class="col-12 flex wrap " data-bind="foreach:photosUrl">
+                        <img src="#" alt="flicker photo" data-bind="attr:{src: $data}" class="flicker-photo padding-around">
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="col-8"></div>
+        </main>
+        <footer id="map-footer" class="row background-black">
+            <div id="personal-info-container" class="col-12 text-center padding-between">
+                <p class="padding-bottom">Created by: Yanisleidi Rodriguez</p>
+                <p class="padding-bottom">Contact Information: <a href="mailto:yrgallo@gmail.com">yrgallo@gmail.com</a></p>
+                <p class="padding-bottom">Site icons made by: <a href="https://fontawesome.com.com/" target="_blank">fontawesome.com.com</a></p>
+            </div>
+        </footer>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="scripts.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBsyTMscA2n2eIKrxaUT5Znow6lMmVqKFk&callback=placesViewModel.init" async defer onerror="placesViewModel.mapErrHandler()"></script>
+
+
+</body>
+
+</html>
