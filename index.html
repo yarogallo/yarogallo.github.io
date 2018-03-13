@@ -15,7 +15,7 @@
 <body>
     <section id="page-wrap" class="container flex column">
 
-        <header id="page-header" class="row flex">
+        <header id="page-header" class="row flex border-bottom">
 
             <div id="logo" class="col-3 space-between">
                 <img id="svg-logo" class="" src="images/logo.svg" alt="portfolio logo">
@@ -30,11 +30,22 @@
         </header>
 
         <main id="page-main" class="row space-between">
+            <section id="work-experience" class="col-12 text-left">
+                <h2 class="capitalize muted-color text-size-big space-left">work experience</h2>
+            </section>
+            <section class="row carrusel border-bottom">
+                <div class="carrusel-content col-12 hidden-overflow">
+                    <div class="content-container flex col-12">
 
-            <div id="main-img" class="col-12 space-between text-left">
-                <img class="display img-width" src="images/main_medium.jpg" srcset="images/main_medium.jpg 800w,
-                        images/main_large.jpg 1120w" sizes="100vw" alt="abstract picture">
-            </div>
+                    </div>
+                </div>
+                <a href="#content2" class="carrusel-link back-button">
+                    <img src="images/back.svg" alt="back icon" data-value="back">
+                </a>
+                <a href="#content1" class="carrusel-link next-button">
+                    <img src="images/next.svg" alt="next icon" data-value="next">
+                </a>
+            </section>
 
             <section id="featured-work" class="col-12 text-left">
                 <h2 class="capitalize muted-color text-size-big space-left">featured work</h2>
@@ -73,6 +84,9 @@
             </nav>
         </footer>
     </section>
+    <script src="js/carrusel.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/porfolioBuilder.js"></script>
 </body>
 
 </html>

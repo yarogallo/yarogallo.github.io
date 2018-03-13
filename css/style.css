@@ -12,13 +12,23 @@ html {
 }
 
 .container {
-    min-height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
     margin: 10px auto;
+}
+
+h5 {
+    margin: 0;
+}
+
+h4 {
+    margin-bottom: 10px;
 }
 
 a {
@@ -33,7 +43,7 @@ a:hover {
     max-width: 100%;
 }
 
-header {
+.border-bottom {
     border-bottom: 3px solid #7d97ad;
 }
 
@@ -76,6 +86,10 @@ footer {
 
 .text-right {
     text-align: right;
+}
+
+.text-decoration {
+    text-decoration-line: underline;
 }
 
 .space-between {
@@ -134,6 +148,10 @@ footer {
     width: 100%;
 }
 
+.col-6 {
+    width: 50%;
+}
+
 .col-3 {
     width: calc(25% - 20px);
 }
@@ -148,4 +166,63 @@ footer {
 
 .display {
     display: none;
+}
+
+
+/*Carrusel css*/
+
+.carrusel {
+    position: relative;
+    ;
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.content {
+    height: 20vh;
+}
+
+.content-container {
+    will-change: transform;
+    transition: transform 1s ease-in-out;
+}
+
+
+/*Carrusel button css*/
+
+.carrusel-link {
+    position: absolute;
+    top: 50%;
+}
+
+.next-button {
+    right: 2px;
+}
+
+.back-button {
+    left: 2px;
+}
+
+.carrusel {
+    background-color: rgba(214, 216, 214, 0.2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.content-container {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.content header {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
