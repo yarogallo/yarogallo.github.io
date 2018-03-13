@@ -216,13 +216,14 @@ footer {
 }
 
 .content header {
-    width: 90%;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 
 .content p {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: left;
+    line-height: 1.6;
 }
