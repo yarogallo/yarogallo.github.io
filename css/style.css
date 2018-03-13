@@ -211,18 +211,23 @@ footer {
 }
 
 .content-container {
-    height: 200px;
+    height: 225px;
     overflow-y: scroll;
 }
 
+.carrusel-content {
+    margin-bottom: 20px;
+}
+
 .content header {
-    width: 90%;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 
 .content p {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: left;
+    line-height: 1.6;
 }
