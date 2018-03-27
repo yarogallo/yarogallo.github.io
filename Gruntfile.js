@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                     height: 200
                 },
                 src: 'img/*.png',
-                dest: 'img-1x/'
+                dest: 'img/'
 
             },
             big_resize: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                     height: 400
                 },
                 src: 'img/*.png',
-                dest: 'img-2x/'
+                dest: 'img/'
 
             }
         },

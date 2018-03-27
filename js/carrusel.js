@@ -15,10 +15,10 @@ carrusel = {
                 const dir = evt.target.dataset.value;
 
                 if (dir === 'back') {
-                    position === 0 || position--;
+                    position = position === 0 ? 0 : position + 1;
                 }
                 if (dir === 'next') {
-                    position === contents.length - 1 || position++;
+                    position = position === contents.length - 1 ? 0 : position + 1;
                 }
 
                 evt.preventDefault();

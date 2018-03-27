@@ -1,57 +1,107 @@
-@media screen and (max-width: 785px) {
-    .text-size-bigger {
-        font-size: 40px;
-    }
+@media screen and (max-width: 380px) {
+	.project-buttons-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.project-description {
+		margin: 0;
+	}	
+	
+	.page-footer p {
+		font-size: 15px;
+	}
+	
+	
 }
 
-@media screen and (max-width: 625px) {
-    .text-size-bigger {
-        font-size: 30px;
-    }
-    .font-thin {
-        font-weight: 400;
-    }
-}
+@media screen and (max-height: 460px) {
+	.text-header img {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 12px;
+    	font-weight: 400;
+    	font-style: normal;
+    	line-height: 1.45;
+    	letter-spacing: -.003em;
+	}
+	
+ }
 
-@media screen and (max-width: 480px) {
-    .text-size-bigger {
-        font-size: 20px;
-    }
+@media screen and (max-width: 620px) {
+   h1 {
+	   font-size: 2em;
+   }
+   h2 {
+	   font-size: 1em;
+	   font-weight: 900;
+   }
 }
+ 
+ @media screen and (max-width: 760px) {
+	 .center-article {
+		 width: 100%;
+		 padding: 0 20px;
+		 text-align: center;
+	 }
+	 
+	 .project {
+		flex-direction: column;
+		align-items: center; 
+		flex-wrap: wrap;
+		width: 100%;
+	} 
+	
+	.project-description {
+		text-align: center;
+	}	
+	 
+	 .about-project {
+		width: 95%;
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	
+	.page-nav nav{
+		width: 100%;
+	}
+ }
+ 
+ @media screen and (min-width: 761px) {
+	.page-nav nav{
+		width: 75%;
+	}
+ }
 
-@media screen and (max-width: 360px) {
-    .col-3,
-    .col-9 {
-        width: calc(100% - 20px);
-    }
-}
+ @media screen and (max-width: 1200px) {
+	.project {
+		width: 80%;
+		justify-content: space-around;
+	}
+	.project-description {
+		padding: 20px 0;
+	}
+	
+	.project-over {
+		top: 5%;
+	}
+ }
+ 
+ @media screen and (min-width: 1200px) {
+	.page-nav nav{
+		width: 50%;
+	}
+ }
+ 
+ 
 
-@media screen and (min-width: 700px) {
-    .col-4 {
-        width: calc((100% - 40px) / 2);
-    }
-    .display {
-        display: block;
-    }
-}
 
-@media screen and (min-width: 900px) {
-    .col-4 {
-        width: calc((100% - 40px) / 3);
-    }
-    .flex {
-        justify-content: space-between;
-    }
-}
 
-@media screen and (min-width: 1020px) {
-    .container {
-        max-width: 1020px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .space-right-left {
-        margin-right: 0;
-        margin-left: 0;
-    }
-}

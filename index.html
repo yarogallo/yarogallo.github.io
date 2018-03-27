@@ -6,87 +6,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
-    <section id="page-wrap" class="container flex column">
-
-        <header id="page-header" class="row flex border-bottom">
-
-            <div id="logo" class="col-3 space-between">
-                <img id="svg-logo" class="" src="images/logo.svg" alt="portfolio logo">
-            </div>
-
-            <div id="header-text" class="col-9 text-right space-between">
-                <h1 class="font-thin uppercase text-size-bigger">yanisleidi rodriguez</h1>
-                <h3 class="uppercase">front-end web developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-        </header>
-
-        <main id="page-main" class="row space-between">
-            <section id="work-experience" class="col-12 text-left">
-                <h2 class="capitalize muted-color text-size-big space-left">work experience</h2>
-            </section>
-            <section class="row carrusel border-bottom">
-                <div class="carrusel-content col-12 hidden-overflow">
-                    <div class="content-container flex col-12">
-
+    <section id="page-wrap" class="container">
+        <header id="page-header" class="row">
+            <section class="col-12 header-content text-center text-muted flex-column">       
+                <div class="text-header">
+                    <picture>
+                        <source media="(max-height: 620px)" srcset="images/small-me.png">
+                        <img src="images/me.png" alt="me picture" class="shrink">
+                    </picture>               
+                    <h1 class="text-uppercase">hi, <span class="text-yellow">i'm yanisleidi rodriguez<span></h1>
+                    <h2 class="text-capitalize">front-end web developer</h2>
+                    <a href="#footer"><button type="button" class="move-to-contacts yellow-button shrink">available to hire</button></a>
+                </div>
+                <div class="header-footer">
+                    <p class="text-capitalize">learn more ....</p>
+                    <div class="bounce">
+                        <a href="#main-content" class="move-to-portfolio">
+                            <img src="images/down.svg" alt="arrow down">
+                        </a>
                     </div>
                 </div>
-                <a href="#content2" class="carrusel-link back-button">
-                    <img src="images/back.svg" alt="back icon" data-value="back">
-                </a>
-                <a href="#content1" class="carrusel-link next-button">
-                    <img src="images/next.svg" alt="next icon" data-value="next">
-                </a>
             </section>
-
-            <section id="featured-work" class="col-12 text-left">
-                <h2 class="capitalize muted-color text-size-big space-left">featured work</h2>
-                <p class="space-right-left truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-                    augue semper porta.</p>
-            </section>
-
-            <section id="projects" class="col-12 flex">
-                <div id="project-appify" class="flex column col-4 text-center space-bottom">
-                    <img class="margin-auto img-width" src="img-1x/arcadegame.png" srcset="img-1x/arcadegame.png 1x, img-2x/arcadegame.png 2x" alt="Appify Project Picture">
-                    <h3 class="uppercase  text-size-big">arcade game</h3>
-                    <a href="projects/arcade-dist/index.html" target="_blank">www.arcadegame</a>
-                    <a href="https://github.com/yarogallo/frontend-nanodegree-arcade-game" target="_blank">arcade-game-github-project</a>
+        </header>
+        
+        <section class="row page-nav background-light-blue">
+            <nav class="col-6">
+                <a id="navigateHome" href="#page-header" >home</a>
+                <a href="#about-me" >about me</a>
+                <a href="#personal-projects-description" >project</a>
+                <a href="#footer">contact</a>
+            </nav>     
+        </section>
+         
+        <section id="about-me" class="row personal-skills padding-top-bottom">
+            <article class="center-article flex-column">
+                <img src="images/settings.svg" alt="">
+                <h2 class="text-uppercase">about me</h2>
+                <p>Hard way learner web enthusiast who work well independently but loves being part of a team environment, fast learner and experienced team player with good communication and interpersonal skills.</p>
+                <p>Bacon ipsum dolor amet picanha meatball chicken hamburger shank. Pastrami biltong meatloaf turducken hamburger, jerky ball tip pork belly beef ribs strip steak. </p>
+            </article>
+        </section>
+            
+        <section id="personal-projects-description" class="row personal-projects padding-top-bottom">
+            <article class="center-article flex-column">
+                <img src="images/code.svg" alt="">
+                <h2 class="text-uppercase text-center">personal projects</h2>
+                <p>Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf. </p>
+            </article>
+        </section>
+        
+        <section id="personal-projects" class="row projects-container flex-column padding-top-bottom">
+            
+            <hr>
+            
+            <div class="project">
+                <div class="about-project">
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-trophy"></i> arcade game</h3>
+                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <div class="project-buttons-container">
+                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">visit me</a>
+                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                    </div>                      
+                </div>  
+                <div class="link-project">
+                    <div class="project-over">
+                        <button disabled="disabled">html</button>
+                        <button disabled="disabled">css</button>
+                        <button disabled="disabled">javascript</button>
+                    </div>
+                    <a href="projects/arcade-dist" target="_blank">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
+                            <img src="images/arcade-1x.png" alt="arcade game">
+                        </picture>
+                    </a>
                 </div>
-
-                <div id="project-sunflower" class="flex column col-4 text-center space-bottom">
-                    <img class="margin-auto img-width" src="img-1x/map.png" srcset="img-1x/map.png 1x, img-2x/map.png 2x" alt="Sunflower Project Picture">
-                    <h3 class="uppercase text-size-big">favorite places</h3>
-                    <a href="projects/map-dist/index.html" target="_blank">www.neighborhoodmap</a>
-                    <a href="https://github.com/yarogallo/frontend-nanodegree-neighborhood-map" target="_blank">neighborhood-map-github-project</a>
+            </div>
+            
+            <hr>
+            
+            <div class="project">
+                <div class="about-project">
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-map-marker-alt"></i> my places</h3>
+                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <div class="project-buttons-container">
+                        <a href="projects/map-dist" class="yellow-button button-project" target="_blank">visit me</a>
+                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                    </div>
+                </div> 
+                <div class="link-project">
+                    <div class="project-over">                           
+                        <button disabled="disabled">html</button>
+                        <button disabled="disabled">css</button>
+                        <button disabled="disabled">javascript</button>
+                        <button disabled="disabled">knockout.js library</button>
+                        <button disabled="disabled">google maps api</button>
+                        <button disabled="disabled">flicker photo search</button>
+                        <button disabled="disabled">mediawiki api</button>                         
+                    </div>
+                    <a href="projects/arcade-dist" target="_blank">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
+                            <img src="images/arcade-1x.png" alt="arcade game">
+                        </picture>
+                    </a> 
+                </div>                                    
+            </div>
+            
+            <hr>
+            
+            <div class="project">
+                <div class="about-project">
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-book"></i> my reads</h3>
+                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <div class="project-buttons-container">
+                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">visit me </a>
+                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                    </div>
                 </div>
-
-                <div id="project-bokeh" class="flex column col-4 text-center space-bottom">
-                    <img class="margin-auto img-width" src="images/project3-360x200_small_1x.jpg" srcset="images/project3-360x200_small_1x.jpg 1x, images/project3-720x400_small_2x.jpg 2x" alt="Bokeh Project Picture">
-                    <h3 class="uppercase  text-size-big">bokeh</h3>
-                    <a href="https://github.com/udacity/Appify/" target="_blank">https://github.com/udacity/bokeh/</a>
+                <div class="link-project">
+                    <div class="project-over">
+                        <button disabled="disabled">html</button>
+                        <button disabled="disabled">css</button>
+                        <button disabled="disabled">javascript</button>
+                        <button disabled="disabled">react</button>
+                    </div>
+                    <a href="projects/arcade-dist" target="_blank">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
+                            <img src="images/arcade-1x.png" alt="arcade game">
+                        </picture>
+                    </a>
                 </div>
-            </section>
-        </main>
-
-        <footer id="page-footer" class="row space-between">
-            <nav class="space-left floated text-size-big">
-                <a class="space-around" href="https://github.com/yarogallo" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a class="space-around" href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="space-around" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            </nav>
-        </footer>
+            </div>           
+        </section>
+            
+        <footer id="footer" class="col-12 page-footer text-center">
+            <div class="text-uppercase">
+                <h2>contact me</h2>
+            </div>
+            <div>
+                <address>
+                    <p><span class="text-capitalize">email: </span><span></span><a href="mailto:yaroga88@yahoo.com">yaroga88@yahoo.com</a></p>
+                    <p><span class="text-capitalize">phone: </span> <a href="tel:786-720-5357">786-720-5357</a></p>
+                    <p class="text-capitalize"><span>location: </span>san francisco, california</p>
+                </address>
+            </div>
+            <div>
+                <nav class="footer-nav">
+                    <a href="https://github.com/yarogallo" target="_blank" ><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/yanisleidi-rodriguez-39158a11b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </nav>
+            </div>
+        </footer> 
     </section>
-    <script src="js/carrusel.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/porfolioBuilder.js"></script>
+    <script src="js/helper.js"></script>
 </body>
 
 </html>
