@@ -23,12 +23,12 @@
                     </picture>               
                     <h1 class="text-uppercase">hi, <span class="text-yellow">i'm yanisleidi rodriguez<span></h1>
                     <h2 class="text-capitalize">front-end web developer</h2>
-                    <a href="#footer"><button type="button" class="move-to-contacts yellow-button shrink">available to hire</button></a>
+                    <a href="#footer" data-nav="footer" class="page-inner-link"><button type="button" class="move-to-contacts yellow-button shrink">available to hire</button></a>
                 </div>
                 <div class="header-footer">
                     <p class="text-capitalize">learn more ....</p>
                     <div class="bounce">
-                        <a href="#main-content" class="move-to-portfolio">
+                        <a href="#main-content" data-nav="about-me" class="page-inner-link">
                             <img src="images/down.svg" alt="arrow down">
                         </a>
                     </div>
@@ -38,10 +38,10 @@
         
         <section class="row page-nav background-light-blue">
             <nav class="col-6">
-                <a id="navigateHome" href="#page-header" >home</a>
-                <a href="#about-me" >about me</a>
-                <a href="#personal-projects-description" >project</a>
-                <a href="#footer">contact</a>
+                <a data-nav="page-header" class="page-inner-link" href="#page-header" >home</a>
+                <a data-nav="about-me" class="page-inner-link" href="#about-me" >about me</a>
+                <a data-nav="personal-projects" class="page-inner-link" href="#personal-projects" >project</a>
+                <a data-nav="footer" class="page-inner-link" href="#footer">contact</a>
             </nav>     
         </section>
          
