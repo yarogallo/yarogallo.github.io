@@ -91,7 +91,9 @@ footer {
     height: 100%;
 }
 
-.row,
+.row {
+    width: 100%;
+}
 .col-12{
     width: 100%;
 }
@@ -203,14 +205,18 @@ footer {
 }
 
 .padding-top-bottom{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 7%;
+    padding-bottom: 5%;
 } 
 
 .sticky {
     position: fixed;
     top: 0;
     z-index: 4;
+}
+
+.relative {
+    position: relative;
 }
 
 /*page header*/
@@ -245,6 +251,7 @@ h1.slide-in, h2.slide-in {
 }
 
 .text-header img {
+    will-change: transform;
     border-radius: 50%;
     border: 3px solid #dddfd4;
 }
@@ -255,21 +262,51 @@ h1.slide-in, h2.slide-in {
 
 /*page-nav*/
 
-.page-nav {
-   display: flex;
-   justify-content: flex-end;
+.page-nav .menu, .page-nav .hamb-menu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    will-change: transform;
+    transition: opacity 1s linear, transform 0.5s ease-in-out;
 }
 
-.page-nav nav {
+.page-nav .slide-down {
+    transform: translateY(50px);
+    opacity: 1;
+    z-index: 2;
+}
+
+.page-nav .menu nav{
     display: flex;
     justify-content: space-around;
 }
 
-.page-nav a {
+.page-nav .menu a {
     padding: 16px;
     text-transform: uppercase;
     color: #ffff;
     font-weight: bolder;
+}
+
+/*hamb menu*/
+
+.hamb-menu {
+    opacity: 0;
+    transform: scale(0)
+}
+
+.page-nav  .hamb-menu button:focus {
+    opacity: 0.5;
+}
+
+.page-nav .hamb-menu button {
+    padding: 14px 30px;
+    pad: 16px;
+    color: #173e43;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
 }
 
 /*main container*/  
@@ -317,7 +354,6 @@ h1.slide-in, h2.slide-in {
 
 .button-project:hover {
     transform:  scale3d(1.1, 1.1, 1.1);
-    
     background-color: #000000;
     color: #fcedb6;
     border-color: #000000;
@@ -380,17 +416,19 @@ h1.slide-in, h2.slide-in {
 
 
 /*animation*/
+
+
 .shrink {
-    will-change: transform;
-    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
     transform: scale(0);
     -ms-transform: scale(0); 
     -webkit-transform: scale(0);
 }
 
 .unshrink {
-    will-change: transform;
-    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 1;
     transform: scale(1);
     -ms-transform: scale(1); 
     -webkit-transform: scale(1);
@@ -454,4 +492,29 @@ h1.slide-in, h2.slide-in {
     
     100% { transform: translateX(0%) scale(1); }
 }
+
+@-webkit-keyframes slide-down {
+    0% { opacity: 0; }
+    
+    25% { opacity: 0; }
+    
+    50% { opacity: 0; }
+    
+    75% { opacity: 0.6; }
+    
+    100% { opacity: 0.8; }
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; }
+    
+    25% { opacity: 0; }
+    
+    50% { opacity: 0; }
+    
+    75% { opacity: 0.6; }
+    
+    100% { opacity: 0.8; }
+}
+
     

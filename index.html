@@ -36,21 +36,27 @@
             </section>
         </header>
         
-        <section class="row page-nav background-light-blue">
-            <nav class="col-6">
-                <a data-nav="page-header" class="page-inner-link" href="#page-header" >home</a>
-                <a data-nav="about-me" class="page-inner-link" href="#about-me" >about me</a>
-                <a data-nav="personal-projects" class="page-inner-link" href="#personal-projects" >project</a>
-                <a data-nav="footer" class="page-inner-link" href="#footer">contact</a>
-            </nav>     
+        <section id="page-navigation-menu" class="row page-nav relative">
+            <div class="col-12 hamb-menu">
+                <button type="button"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="col-12 menu background-light-blue">
+                <nav class="menu-nav">
+                    <a data-nav="page-header" class="page-inner-link" href="#page-header" >home</a>
+                    <a data-nav="about-me" class="page-inner-link" href="#about-me" >about me</a>
+                    <a data-nav="personal-projects-description" class="page-inner-link" href="#personal-projects-description" >project</a>
+                    <a data-nav="footer" class="page-inner-link" href="#footer">contact</a>
+                </nav> 
+            </div>
         </section>
          
         <section id="about-me" class="row personal-skills padding-top-bottom">
             <article class="center-article flex-column">
                 <img src="images/settings.svg" alt="">
                 <h2 class="text-uppercase">about me</h2>
-                <p>Hard way learner web enthusiast who work well independently but loves being part of a team environment, fast learner and experienced team player with good communication and interpersonal skills.</p>
-                <p>Bacon ipsum dolor amet picanha meatball chicken hamburger shank. Pastrami biltong meatloaf turducken hamburger, jerky ball tip pork belly beef ribs strip steak. </p>
+                <p>I am a junior front-end developer, actually living in San Francisco, web enthusiast who works well independently but loves being part of a team environment, 
+                    fast learner and team player with good communication and interpersonal skills.</p>
+                <p>I love building things from scratch but I also work well with front-end libraries and frameworks.</p>
             </article>
         </section>
             
@@ -58,7 +64,7 @@
             <article class="center-article flex-column">
                 <img src="images/code.svg" alt="">
                 <h2 class="text-uppercase text-center">personal projects</h2>
-                <p>Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf. </p>
+                <p>This is an example of my personal projects, visit my <a href="https://github.com/yarogallo">github</a> page to see the code. Most of them were built as part of udacity front-end nanodegree program  and react nanodegree-program. </p>
             </article>
         </section>
         
@@ -69,7 +75,10 @@
             <div class="project">
                 <div class="about-project">
                     <h3 class="project-title text-dark-blue"><i class="fas fa-trophy"></i> arcade game</h3>
-                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <p class="project-description">To win the game the player need to do five rounds from the land to the sea and have an score equal or over 1000. 
+                        Hit a cockroach decrement the score, if the score became negative the game finish. 
+                        Pick up a gem increment the score, depending on the gem value.
+                        The player can not pass throught the rocks.</p>
                     <div class="project-buttons-container">
                         <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">visit me</a>
                         <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
@@ -80,11 +89,12 @@
                         <button disabled="disabled">html</button>
                         <button disabled="disabled">css</button>
                         <button disabled="disabled">javascript</button>
+                        <button disabled="disabled">grunt</button>
                     </div>
                     <a href="projects/arcade-dist" target="_blank">
                         <picture>
                             <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
-                            <img src="images/arcade-1x.png" alt="arcade game">
+                            <img src="images/arcade-big.png" alt="arcade game">
                         </picture>
                     </a>
                 </div>
@@ -94,11 +104,12 @@
             
             <div class="project">
                 <div class="about-project">
-                    <h3 class="project-title text-dark-blue"><i class="fas fa-map-marker-alt"></i> my places</h3>
-                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-map-marker-alt"></i>my places</h3>
+                    <p class="project-description">This project shows a list of my favorite places in San Francisco, each place have an associated marker located in the full screen map.
+                        We can add new places, remove places, search for aditional information about each place (address, phone number ,related photos etc...) and filter the place's list.</p>
                     <div class="project-buttons-container">
                         <a href="projects/map-dist" class="yellow-button button-project" target="_blank">visit me</a>
-                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                        <a href="https://github.com/yarogallo/frontend-nanodegree-neighborhood-map" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
                     </div>
                 </div> 
                 <div class="link-project">
@@ -113,8 +124,8 @@
                     </div>
                     <a href="projects/arcade-dist" target="_blank">
                         <picture>
-                            <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
-                            <img src="images/arcade-1x.png" alt="arcade game">
+                            <source media="(max-width: 1200px)" srcset="images/place-medium.png">
+                            <img src="images/place-big.png" alt="my favorite places">
                         </picture>
                     </a> 
                 </div>                                    
@@ -125,10 +136,10 @@
             <div class="project">
                 <div class="about-project">
                     <h3 class="project-title text-dark-blue"><i class="fas fa-book"></i> my reads</h3>
-                    <p class="project-description">Pork sausage venison picanha t-bone, short ribs pastrami. Burgdoggen biltong brisket, corned beef ham kevin pastrami swine meatball ball tip capicola. Ham filet mignon meatloaf.</p>
+                    <p class="project-description">The application allows to categorize books into <b>Currently Reading</b>, <b>Want To Read</b> and <b>Read</b>. Each category represent a bookshelf, users are able to move books between bookshelfs and add new books to any bookshelf.</p>
                     <div class="project-buttons-container">
-                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">visit me </a>
-                        <a href="projects/arcade-dist" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                        <a href="https://github.com/yarogallo/myReads" class="yellow-button button-project" target="_blank">visit me </a>
+                        <a href="https://github.com/yarogallo/myReads" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
                     </div>
                 </div>
                 <div class="link-project">
@@ -138,10 +149,10 @@
                         <button disabled="disabled">javascript</button>
                         <button disabled="disabled">react</button>
                     </div>
-                    <a href="projects/arcade-dist" target="_blank">
+                    <a href="https://github.com/yarogallo/myReads" target="_blank">
                         <picture>
-                            <source media="(max-width: 1200px)" srcset="images/arcade-medium.png">
-                            <img src="images/arcade-1x.png" alt="arcade game">
+                            <source media="(max-width: 1200px)" srcset="images/read-medium.png">
+                            <img src="images/read-big.png" alt="my reads">
                         </picture>
                     </a>
                 </div>
