@@ -5,11 +5,10 @@
     <title>My Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,9 +53,11 @@
             <article class="center-article flex-column">
                 <img src="images/settings.svg" alt="">
                 <h2 class="text-uppercase">about me</h2>
-                <p>I am a junior front-end developer, actually living in San Francisco, web enthusiast who works well independently but loves being part of a team environment, 
+                <p>Frontend developer, living in San Francisco. Web enthusiast, who works well independently but loves being part of a team environment, 
                     fast learner and team player with good communication and interpersonal skills.</p>
-                <p>I love building things from scratch but I also work well with front-end libraries and frameworks.</p>
+                <p>I love building things from scratch but I work well with front-end libraries and frameworks. 
+                    Experienced in all 6 stages of the web development process and obsessed with collaboration, standardization and simplification. 
+                    </p>
             </article>
         </section>
             
@@ -64,11 +65,72 @@
             <article class="center-article flex-column">
                 <img src="images/code.svg" alt="">
                 <h2 class="text-uppercase text-center">personal projects</h2>
-                <p>This is an example of my personal projects, visit my <a href="https://github.com/yarogallo">github</a> page to see the code. Most of them were built as part of udacity front-end nanodegree program  and react nanodegree-program. </p>
+                <p>Here are some examples of my personal projects, visit my <a href="https://github.com/yarogallo" class="underline">github</a> page to see the code. 
+                </p>
             </article>
         </section>
         
         <section id="personal-projects" class="row projects-container flex-column padding-top-bottom">
+            
+            <hr>
+            
+            <div class="project">
+                <div class="about-project">
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-book"></i> my reads</h3>
+                    <p class="project-description">The application allows to categorize books into <b>Currently Reading</b>, <b>Want To Read</b> and <b>Read</b>. Each category represent a bookshelf, users are able to move books between bookshelfs and add new books to any bookshelf.</p>
+                    <div class="project-buttons-container">
+                        <a href="projects/myread-dist" class="yellow-button button-project" target="_blank">visit me </a>
+                        <a href="https://github.com/yarogallo/myReads" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                    </div>
+                </div>
+                <div class="link-project">
+                    <div class="project-over">
+                        <button disabled="disabled">html</button>
+                        <button disabled="disabled">css</button>
+                        <button disabled="disabled">javascript</button>
+                        <button disabled="disabled">react.js</button>
+                        <button disabled="disabled">react router</button>
+                    </div>
+                    <a href="projects/myread-dist" target="_blank">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="images/read-medium.png">
+                            <img src="images/read-big.png" alt="my reads">
+                        </picture>
+                    </a>
+                </div>
+            </div> 
+            
+            <hr>
+            
+            <div class="project">
+                <div class="about-project">
+                    <h3 class="project-title text-dark-blue"><i class="fas fa-map-marker-alt"></i>my places</h3>
+                    <p class="project-description">This is a list of my favorite places in San Francisco, each place have an associated marker located in the full screen map.
+                        We can add new places, remove places, search for aditional information about each place (address, phone number ,related photos etc...) and filter the place's list.</p>
+                    <div class="project-buttons-container">
+                        <a href="projects/map-dist" class="yellow-button button-project" target="_blank">visit me</a>
+                        <a href="https://github.com/yarogallo/frontend-nanodegree-neighborhood-map" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
+                    </div>
+                </div> 
+                <div class="link-project">
+                    <div class="project-over">                           
+                        <button disabled="disabled">html</button>
+                        <button disabled="disabled">css</button>
+                        <button disabled="disabled">javascript</button>
+                        <button disabled="disabled">knockout.js</button>
+                        <button disabled="disabled">google maps api</button>
+                        <button disabled="disabled">flicker photo search</button>
+                        <button disabled="disabled">mediawiki api</button>                         
+                        <button disabled="disabled">grunt</button>                         
+                    </div>
+                    <a href="projects/map-dist" target="_blank">
+                        <picture>
+                            <source media="(max-width: 1200px)" srcset="images/place-medium.png">
+                            <img src="images/place-big.png" alt="my favorite places">
+                        </picture>
+                    </a> 
+                </div>                                    
+            </div>
             
             <hr>
             
@@ -99,64 +161,7 @@
                     </a>
                 </div>
             </div>
-            
-            <hr>
-            
-            <div class="project">
-                <div class="about-project">
-                    <h3 class="project-title text-dark-blue"><i class="fas fa-map-marker-alt"></i>my places</h3>
-                    <p class="project-description">This project shows a list of my favorite places in San Francisco, each place have an associated marker located in the full screen map.
-                        We can add new places, remove places, search for aditional information about each place (address, phone number ,related photos etc...) and filter the place's list.</p>
-                    <div class="project-buttons-container">
-                        <a href="projects/map-dist" class="yellow-button button-project" target="_blank">visit me</a>
-                        <a href="https://github.com/yarogallo/frontend-nanodegree-neighborhood-map" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
-                    </div>
-                </div> 
-                <div class="link-project">
-                    <div class="project-over">                           
-                        <button disabled="disabled">html</button>
-                        <button disabled="disabled">css</button>
-                        <button disabled="disabled">javascript</button>
-                        <button disabled="disabled">knockout.js library</button>
-                        <button disabled="disabled">google maps api</button>
-                        <button disabled="disabled">flicker photo search</button>
-                        <button disabled="disabled">mediawiki api</button>                         
-                    </div>
-                    <a href="projects/arcade-dist" target="_blank">
-                        <picture>
-                            <source media="(max-width: 1200px)" srcset="images/place-medium.png">
-                            <img src="images/place-big.png" alt="my favorite places">
-                        </picture>
-                    </a> 
-                </div>                                    
-            </div>
-            
-            <hr>
-            
-            <div class="project">
-                <div class="about-project">
-                    <h3 class="project-title text-dark-blue"><i class="fas fa-book"></i> my reads</h3>
-                    <p class="project-description">The application allows to categorize books into <b>Currently Reading</b>, <b>Want To Read</b> and <b>Read</b>. Each category represent a bookshelf, users are able to move books between bookshelfs and add new books to any bookshelf.</p>
-                    <div class="project-buttons-container">
-                        <a href="https://github.com/yarogallo/myReads" class="yellow-button button-project" target="_blank">visit me </a>
-                        <a href="https://github.com/yarogallo/myReads" class="yellow-button button-project" target="_blank">github <i class="fab fa-github big-icon"></i></a>
-                    </div>
-                </div>
-                <div class="link-project">
-                    <div class="project-over">
-                        <button disabled="disabled">html</button>
-                        <button disabled="disabled">css</button>
-                        <button disabled="disabled">javascript</button>
-                        <button disabled="disabled">react</button>
-                    </div>
-                    <a href="https://github.com/yarogallo/myReads" target="_blank">
-                        <picture>
-                            <source media="(max-width: 1200px)" srcset="images/read-medium.png">
-                            <img src="images/read-big.png" alt="my reads">
-                        </picture>
-                    </a>
-                </div>
-            </div>           
+          
         </section>
             
         <footer id="footer" class="col-12 page-footer text-center">
